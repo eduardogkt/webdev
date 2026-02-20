@@ -1,0 +1,19 @@
+{
+    "name": "npm-pkgs",
+    "version": "1.0.0",
+    "description": "learning about npm",
+    "license": "ISC",
+    "author": "Eduardo Tanaka",
+    "type": "module",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "dependencies": {
+        "inquirer": "^13.2.5",
+        "qr-image": "^3.2.0",
+        "sillyname": "^0.1.0",
+        "superheroes": "^4.0.0"
+    },
+    "devDependencies": {}
+}

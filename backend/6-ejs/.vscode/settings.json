@@ -1,0 +1,4 @@
+{
+    // desativando prettier para que não complete as tags dos partials
+    "editor.formatOnSave": false
+}
