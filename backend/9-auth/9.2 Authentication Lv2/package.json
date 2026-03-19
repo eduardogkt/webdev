@@ -1,0 +1,21 @@
+{
+    "dependencies": {
+        "bcrypt": "^6.0.0",
+        "body-parser": "^2.2.2",
+        "ejs": "^5.0.1",
+        "express": "^5.2.1",
+        "pg": "^8.20.0"
+    },
+    "name": "9.2-authentication-lv2",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "module"
+}
