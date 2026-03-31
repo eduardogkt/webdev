@@ -45,6 +45,7 @@ app.post("/register", async (req, res) => {
             res.send("Email already exists. Try logging in.");
         } else {
             // password hashing
+            // hash armazena o resultado da senha apos os salt rounds
             bcrypt.hash(password, saltRounds, async (err, hash) => {
                 if (err) {
                     console.error("Error hashing: " + err);
@@ -76,6 +77,7 @@ app.post("/login", async (req, res) => {
             const user = findUser.rows[0];
             const storedHashedPassword = user.password;
 
+            // permite comparar o conteudo sem hash com o conteudo com hash
             bcrypt.compare(
                 loginPassword,
                 storedHashedPassword,

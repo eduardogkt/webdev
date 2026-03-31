@@ -15,7 +15,7 @@ app.use(express.static("public"));
 app.use(
     session({
         secret: "TOPSECRETWORD", // palavra ou "chave" de acesso
-        resave: false, // não salvar quando reiniciar (server, bd, etc)
+        resave: false, // não salvar no banco de dados
         saveUninitialized: true, // salva sessões não inicializadas
         cookie: {
             maxAge: 1000 * 60 * 60 * 24, // duração do cookie (1 dia)
@@ -141,7 +141,8 @@ passport.use(
     }),
 );
 
-// salva os dados do usuário passado no armazenamento local
+// salva os dados do usuário passado no armazenamento local e retorna as
+// informações dos usuários
 passport.serializeUser((user, cb) => {
     cb(null, user);
 });
